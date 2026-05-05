@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | EduWave</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">EduWave</a>
+      <nav class="main-nav hide-sm">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="radio.html">Radio</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-pad auth-page">
+    <div class="container auth-card">
+      <h1>Create your account</h1>
+      <p class="auth-copy">Start learning with one account for video, audio, and radio courses.</p>
+      <form id="signupForm">
+        <label>Name</label>
+        <input id="signupName" name="name" type="text" placeholder="Your full name" required />
+        <label>Email or Phone</label>
+        <input id="signupEmail" name="email" type="text" placeholder="you@example.com" required />
+        <label>Password</label>
+        <input id="signupPassword" name="password" type="password" placeholder="Create a password" required />
+        <div class="role-group">
+          <label class="radio-label"><input type="radio" name="role" value="student" checked /> Student</label>
+          <label class="radio-label"><input type="radio" name="role" value="instructor" /> Instructor</label>
+        </div>
+        <button type="submit" class="btn btn-primary full">Sign Up</button>
+      </form>
+      <p class="auth-footer">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

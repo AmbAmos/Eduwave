@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses | EduWave</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">EduWave</a>
+      <nav class="main-nav hide-sm">
+        <a href="index.html">Home</a>
+        <a href="courses.html" class="active">Courses</a>
+        <a href="radio.html">Radio</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Browse</p>
+          <h2>All Courses</h2>
+        </div>
+      </div>
+      <div class="filter-row">
+        <select id="filterCategory">
+          <option value="">Subject</option>
+          <option value="Technology">Technology</option>
+          <option value="Business">Business</option>
+          <option value="Science">Science</option>
+        </select>
+        <select id="filterLevel">
+          <option value="">Level</option>
+          <option value="primary">Primary</option>
+          <option value="secondary">Secondary</option>
+          <option value="professional">Professional</option>
+        </select>
+        <select id="filterFormat">
+          <option value="">Format</option>
+          <option value="video">Video</option>
+          <option value="audio">Audio</option>
+        </select>
+      </div>
+      <div class="course-grid" id="courseGrid">
+        <div class="full-card empty-card">
+          <p>Loading courses...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html">Home</a>
+    <a href="courses.html" class="active">Courses</a>
+    <a href="radio.html">Radio</a>
+    <a href="dashboard.html">Library</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

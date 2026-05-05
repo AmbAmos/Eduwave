@@ -1,0 +1,258 @@
+# EDTECH PLATFORM UI/UX DESIGN (VIDEO + AUDIO + RADIO)
+
+## 1. OVERALL DESIGN STYLE
+
+* Clean, mobile-first (majority users on phones)
+* Low data optimized (minimal heavy animations)
+* Colors: Deep Blue (trust), White (clean), Orange (energy/action)
+* Typography: Bold headers, simple readable body text
+
+---
+
+## 2. LANDING PAGE (HOME)
+
+### Top Navigation Bar
+
+* Logo (left)
+* Home
+* Courses
+* Radio
+* About
+* Login / Sign Up (right)
+
+### Hero Section
+
+* Headline: “Learn Anywhere — Watch, Listen, or Tune In”
+* Subtext: Short explanation of platform
+* CTA Buttons:
+
+  * Start Learning
+  * Listen Live
+
+### Featured Sections
+
+* Popular Courses (scrollable cards)
+* Recently Added
+* Audio Lessons
+* Live Radio Now Playing
+
+### Footer
+
+* Contact
+* Social links
+* Terms & Privacy
+
+---
+
+## 3. USER AUTHENTICATION
+
+### Sign Up Page
+
+* Name
+* Email / Phone
+* Password
+* Role Selection:
+
+  * Student
+  * Instructor
+
+### Login Page
+
+* Email/Phone
+* Password
+* Forgot Password
+
+---
+
+## 4. DASHBOARD (STUDENT)
+
+### Sidebar Menu
+
+* Dashboard
+* My Courses
+* Audio Library
+* Radio
+* Downloads
+* Profile
+
+### Main Dashboard View
+
+* Continue Watching (progress bar)
+* Recommended Courses
+* Recently Played Audio
+* Radio Schedule Preview
+
+---
+
+## 5. COURSES PAGE
+
+### Filters (Top)
+
+* Subject
+* Level (Primary, Secondary, Professional)
+* Format (Video / Audio)
+
+### Course Cards
+
+Each card shows:
+
+* Thumbnail
+* Title
+* Instructor
+* Duration
+* Enroll Button
+
+---
+
+## 6. COURSE DETAIL PAGE
+
+### Header
+
+* Course Title
+* Instructor Info
+* Enroll / Continue Button
+
+### Tabs
+
+* Overview
+* Lessons
+* Reviews
+
+### Lessons List
+
+* Video lessons
+* Audio option toggle
+* Download button
+
+---
+
+## 7. VIDEO PLAYER PAGE
+
+### Player Section
+
+* Video player (top)
+* Toggle: Video / Audio Mode
+
+### Below Player
+
+* Lesson title
+* Notes section
+* Comments/Q&A
+
+### Sidebar
+
+* Course lesson list (click to navigate)
+
+---
+
+## 8. AUDIO PLAYER PAGE
+
+* Large Play/Pause button
+* Progress bar
+* Download option
+* Playlist queue
+
+---
+
+## 9. RADIO PAGE (KEY FEATURE)
+
+### Live Section
+
+* “Now Playing”
+* Play button
+
+### Schedule Section
+
+* Time slots
+* Program titles
+
+### Interaction
+
+* Request topic
+* Send message (optional live chat)
+
+---
+
+## 10. INSTRUCTOR DASHBOARD
+
+### Sidebar
+
+* Upload Content
+* My Courses
+* Analytics
+
+### Upload Page
+
+* Upload Video
+* Auto-convert to Audio
+* Add title, description, category
+
+### Analytics
+
+* Views
+* Listens
+* Student engagement
+
+---
+
+## 11. PROFILE PAGE
+
+* Profile info
+* Enrolled courses
+* Certificates
+* Settings
+
+---
+
+## 12. MOBILE EXPERIENCE (VERY IMPORTANT)
+
+* Bottom Navigation Bar:
+
+  * Home
+  * Courses
+  * Radio
+  * Library
+  * Profile
+
+* One-hand usability
+
+* Large buttons
+
+* Offline download access
+
+---
+
+## 13. USER FLOW (SIMPLE)
+
+1. User lands on homepage
+2. Clicks “Start Learning”
+3. Signs up
+4. Browses courses
+5. Starts lesson (video or audio)
+6. Can switch to radio anytime
+
+---
+
+## 14. KEY UX PRINCIPLES
+
+* 3-click rule (find anything in 3 steps)
+* Low data usage first
+* Fast loading (critical for Africa)
+* Clear navigation (no confusion)
+
+---
+
+## 15. FUTURE ADDITIONS
+
+* Live classes (Zoom integration)
+* Certificates download
+* Community discussion forum
+* Multi-language support
+
+---
+
+## FINAL NOTE
+
+This platform should feel simple like a radio, engaging like YouTube, and structured like a school.
+
+If users have to think too much, you’ve already lost them.

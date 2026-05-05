@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Detail | EduWave</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">EduWave</a>
+      <nav class="main-nav hide-sm">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="radio.html">Radio</a>
+      </nav>
+      <a href="dashboard.html" class="btn btn-outline hide-sm">Dashboard</a>
+    </div>
+  </header>
+
+  <main class="section-pad course-page">
+    <div class="container course-detail-grid">
+      <section class="course-main">
+        <div class="course-header">
+          <div>
+            <p class="eyebrow">Course</p>
+            <h1 id="courseTitle">Digital Skills Bootcamp</h1>
+            <p class="instructor" id="courseInstructor">By Amina Mensah</p>
+          </div>
+          <div class="course-actions">
+            <button id="continueButton" class="btn btn-primary">Continue</button>
+            <a href="#lessons" class="btn btn-outline">Lessons</a>
+          </div>
+        </div>
+
+        <div class="course-tabs">
+          <button class="tab active" data-tab="overview">Overview</button>
+          <button class="tab" data-tab="lessons">Lessons</button>
+          <button class="tab" data-tab="reviews">Reviews</button>
+        </div>
+
+        <div class="tab-panel active" id="overview">
+          <p id="courseOverview">Learn essential digital skills with bite-sized lessons you can watch or listen to anywhere. This course is perfect for students and professionals seeking practical knowledge.</p>
+          <ul class="feature-list">
+            <li>Video lessons with audio mode</li>
+            <li>Downloadable resources</li>
+            <li>Live radio study sessions</li>
+          </ul>
+        </div>
+
+        <div class="tab-panel" id="lessons">
+          <div id="lessonList"></div>
+        </div>
+
+        <div class="tab-panel" id="reviews">
+          <article class="review-card">
+            <p class="review-text">"Great blend of video and audio content for low-data learning."</p>
+            <p class="review-author">- Sarah, Student</p>
+          </article>
+          <article class="review-card">
+            <p class="review-text">"Easy to follow and perfect for mobile study."</p>
+            <p class="review-author">- Kwesi, Learner</p>
+          </article>
+        </div>
+      </section>
+
+      <aside class="course-sidebar">
+        <h2>Lessons</h2>
+        <ul class="lesson-list">
+          <li><a href="lesson-player.html">1. Digital Literacy</a></li>
+          <li><a href="lesson-player.html">2. Online Safety</a></li>
+          <li><a href="lesson-player.html">3. Productivity Tools</a></li>
+          <li><a href="lesson-player.html">4. Career Essentials</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="radio.html">Radio</a>
+    <a href="dashboard.html">Library</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

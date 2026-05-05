@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | EduWave</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">EduWave</a>
+      <nav class="main-nav hide-sm">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="radio.html">Radio</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-pad auth-page">
+    <div class="container auth-card">
+      <h1>Welcome back</h1>
+      <p class="auth-copy">Login to continue your learning journey.</p>
+      <form id="loginForm">
+        <label>Email or Phone</label>
+        <input id="loginEmail" name="email" type="text" placeholder="you@example.com" required />
+        <label>Password</label>
+        <input id="loginPassword" name="password" type="password" placeholder="Enter your password" required />
+        <a href="#" class="small-link forgot">Forgot Password?</a>
+        <button type="submit" class="btn btn-primary full">Login</button>
+      </form>
+      <p class="auth-footer">New to EduWave? <a href="signup.html">Sign Up</a></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | EduWave</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">EduWave</a>
+      <div class="auth-links"></div>
+    </div>
+  </header>
+
+  <main class="section-pad profile-page">
+    <div class="container profile-grid">
+      <section class="profile-card card">
+        <div class="profile-header">
+          <div>
+            <h1 id="profileName">Jane Doe</h1>
+            <p id="profileRole">Student</p>
+          </div>
+          <a href="#" class="btn btn-outline">Edit</a>
+        </div>
+        <div class="profile-detail">
+          <p><strong>Email</strong><br /><span id="profileEmail">jane.doe@example.com</span></p>
+          <p><strong>Enrolled Courses</strong><br /><span id="profileEnrollments">5</span></p>
+          <p><strong>Certificates</strong><br /><span id="profileCertificates">2 earned</span></p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><h2>Enrolled Courses</h2></div>
+        <ul class="mini-list" id="enrolledCoursesList">
+          <li>Digital Skills Bootcamp</li>
+          <li>Language Listening Lab</li>
+          <li>Math Mastery</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <div class="card-head"><h2>Settings</h2></div>
+        <ul class="settings-list">
+          <li>Notifications</li>
+          <li>Download Preferences</li>
+          <li>Language</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="radio.html">Radio</a>
+    <a href="dashboard.html">Library</a>
+    <a href="profile.html" class="active">Profile</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

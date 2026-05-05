@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instructor Dashboard | EduWave</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">EduWave</a>
+      <div class="auth-links"></div>
+    </div>
+  </header>
+
+  <main class="section-pad instructor-page">
+    <div class="container instructor-grid">
+      <section class="card upload-card">
+        <div class="card-head"><h2>Upload Content</h2></div>
+        <form>
+          <label>Title</label>
+          <input type="text" placeholder="Course or lesson title" />
+          <label>Description</label>
+          <textarea placeholder="Short description"></textarea>
+          <label>Category</label>
+          <select>
+            <option>Education</option>
+            <option>Skills</option>
+            <option>Language</option>
+          </select>
+          <label>Upload Video</label>
+          <input type="file" />
+          <button class="btn btn-primary full">Upload & Convert</button>
+        </form>
+      </section>
+
+      <section class="analytics-card card">
+        <div class="card-head"><h2>Analytics</h2></div>
+        <div class="stat-grid">
+          <div>
+            <h3>Views</h3>
+            <p>8.2k</p>
+          </div>
+          <div>
+            <h3>Listens</h3>
+            <p>3.4k</p>
+          </div>
+          <div>
+            <h3>Engagement</h3>
+            <p>72%</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="radio.html">Radio</a>
+    <a href="dashboard.html">Library</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

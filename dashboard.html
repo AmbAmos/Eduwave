@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard | EduWave</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-row">
+      <a href="index.html" class="brand">EduWave</a>
+      <div class="auth-links"></div>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <h2>Student Menu</h2>
+      <nav>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="courses.html">My Courses</a>
+        <a href="audio-player.html">Audio Library</a>
+        <a href="radio.html">Radio</a>
+        <a href="#">Downloads</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </aside>
+
+  <main class="dashboard-main section-pad">
+    <div class="container dashboard-grid">
+      <section class="dashboard-card progress-card">
+        <div class="card-head">
+          <h2>Continue Watching</h2>
+          <span>75% complete</span>
+        </div>
+        <div class="progress-bar"><span style="width: 75%;"></span></div>
+        <p>Modern Business Skills - Chapter 3</p>
+      </section>
+
+      <section class="dashboard-card">
+        <h2>Recommended Courses</h2>
+        <div class="small-card-list">
+          <article class="small-card">
+            <h3>Exam Prep Audio</h3>
+            <p>Build confidence with audio revision.</p>
+          </article>
+          <article class="small-card">
+            <h3>Study Smart</h3>
+            <p>Fast video lessons for exam success.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard-card">
+        <h2>Recently Played Audio</h2>
+        <ul class="mini-list">
+          <li>Advanced Grammar • 24m</li>
+          <li>Business English • 18m</li>
+          <li>Study Tips • 12m</li>
+        </ul>
+      </section>
+
+      <section class="dashboard-card">
+        <h2>Radio Schedule Preview</h2>
+        <ul class="schedule-list">
+          <li><strong>10:00</strong> Learning Breakfast</li>
+          <li><strong>13:00</strong> Study Zone</li>
+          <li><strong>16:00</strong> Career Talk</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <nav class="bottom-nav">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="radio.html">Radio</a>
+    <a href="audio-player.html">Library</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

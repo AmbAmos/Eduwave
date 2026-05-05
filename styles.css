@@ -1,0 +1,667 @@
+:root {
+  --bg: #f7f9ff;
+  --surface: #ffffff;
+  --text: #102a43;
+  --muted: #637381;
+  --primary: #0a3d72;
+  --primary-light: #285b9b;
+  --accent: #ff7a18;
+  --border: #dbe2ef;
+  --shadow: 0 18px 40px rgba(9, 30, 66, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.section-pad {
+  padding: 2rem 0;
+}
+
+.topbar {
+  background: #fff;
+  border-bottom: 1px solid rgba(16, 42, 67, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.main-nav a {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  color: var(--primary);
+}
+
+.auth-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary);
+  border-color: rgba(10, 61, 114, 0.18);
+}
+
+.btn-sm {
+  padding: 0.75rem 1rem;
+}
+
+.full {
+  width: 100%;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  font-size: 0.78rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero {
+  background: linear-gradient(180deg, #eef5ff 0%, #f7f9ff 100%);
+}
+
+.hero-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 0 0 1rem;
+  line-height: 1.05;
+}
+
+.hero-copy {
+  max-width: 42rem;
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hero-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.feature-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(255, 122, 24, 0.14);
+  color: var(--accent);
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.featured .section-header,
+.about-grid,
+.filter-row,
+.course-grid,
+.dashboard-grid,
+.radio-grid,
+.instructor-grid,
+.profile-grid,
+.player-grid,
+.course-detail-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.course-grid {
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.section-header {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.section-header h2,
+.section-header h1,
+.card-head h2 {
+  margin: 0;
+}
+
+.small-link,
+.forgot {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.scrollable-cards {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(18rem, 1fr);
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  min-width: 18rem;
+}
+
+.course-card img,
+.course-card .video-placeholder {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.course-meta,
+.instructor,
+.course-card p,
+.small-card p,
+.review-author,
+.card-head p {
+  color: var(--muted);
+}
+
+.course-card h3,
+.small-card h3,
+.lesson-item h3,
+.profile-header h1,
+.audio-card h1,
+.radio-live h1 {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.instructor {
+  margin-bottom: 1rem;
+}
+
+.card-footer,
+.lesson-actions,
+.audio-meta,
+.player-main .card-head,
+.schedule-list,
+.mini-list,
+.playlist-list,
+.settings-list,
+.profile-detail {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card-footer {
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.btn-row,
+.lesson-actions {
+  gap: 0.75rem;
+}
+
+.info-card,
+.card,
+.auth-card,
+.profile-card,
+.upload-card,
+.analytics-card,
+.radio-live,
+.radio-schedule,
+.radio-interaction,
+.audio-card,
+.playlist-card,
+.notes-card,
+.qa-card,
+.progress-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.info-card .card-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.split-grid {
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.about-grid {
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.filter-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.filter-row select,
+input,
+textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.95rem 1rem;
+  color: var(--text);
+}
+
+.lesson-item,
+.review-card,
+.schedule-list li,
+.settings-list li,
+.mini-list li,
+.playlist-list li,
+.lesson-list li {
+  list-style: none;
+  background: #f4f8ff;
+  border-radius: 1rem;
+  padding: 0.95rem 1rem;
+}
+
+.lesson-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lesson-actions {
+  display: flex;
+}
+
+.review-card {
+  border-left: 4px solid var(--accent);
+}
+
+.review-text {
+  margin: 0 0 0.75rem;
+}
+
+.review-author {
+  margin: 0;
+  font-weight: 700;
+}
+
+.course-detail-grid,
+.player-grid,
+.instructor-grid,
+.profile-grid,
+.radio-grid {
+  grid-template-columns: 1fr;
+}
+
+.course-main,
+.player-main,
+.profile-card,
+.analytics-card,
+.upload-card {
+  width: 100%;
+}
+
+.course-sidebar,
+.player-sidebar {
+  width: 100%;
+}
+
+.lesson-list,
+.schedule-list,
+.playlist-list,
+.settings-list,
+.mini-list {
+  padding: 0;
+  margin: 0;
+}
+
+.lesson-list li,
+.schedule-list li,
+.playlist-list li,
+.settings-list li,
+.mini-list li {
+  margin-bottom: 0.75rem;
+}
+
+.bottom-nav {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: rgba(16, 42, 67, 0.12);
+}
+
+.bottom-nav a {
+  background: #fff;
+  padding: 0.9rem 0;
+  text-align: center;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.bottom-nav a.active,
+.bottom-nav a:hover {
+  background: #eff6ff;
+  color: var(--primary);
+}
+
+.auth-page {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 4rem);
+}
+
+.auth-card {
+  width: min(36rem, 100%);
+}
+
+.auth-card h1 {
+  margin: 0 0 0.5rem;
+}
+
+.auth-copy,
+.auth-footer,
+.profile-detail p,
+.card-head p,
+.audio-meta span {
+  color: var(--muted);
+}
+
+.auth-card label,
+.auth-card button,
+.form-group,
+.profile-header,
+.card-head,
+.audio-player,
+.mode-toggle,
+.video-placeholder,
+.progress-bar,
+.radio-live .btn,
+.radio-interaction .btn {
+  width: 100%;
+}
+
+.auth-card label,
+.card-head,
+.profile-header {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.role-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.radio-grid {
+  grid-template-columns: 1fr;
+}
+
+.radio-grid .card {
+  padding-bottom: 1.5rem;
+}
+
+.radio-live,
+.radio-schedule,
+.radio-interaction,
+.audio-card,
+.playlist-card,
+.notes-card,
+.qa-card,
+.upload-card,
+.analytics-card,
+.profile-card {
+  min-height: 12rem;
+}
+
+.audio-player {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.audio-action {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.progress-line {
+  height: 0.75rem;
+  border-radius: 999px;
+  background: #e2eaf7;
+  overflow: hidden;
+}
+
+.progress-line span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #ffb35b);
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-head h2 {
+  margin: 0;
+}
+
+.video-placeholder {
+  display: grid;
+  place-items: center;
+  background: #dfe7f7;
+  min-height: 210px;
+  border-radius: 1.5rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.mode-toggle {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.profile-grid,
+.instructor-grid,
+.dashboard-grid {
+  grid-template-columns: 1fr;
+}
+
+.profile-header,
+.dashboard-card,
+.upload-card,
+.analytics-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-header {
+  justify-content: space-between;
+}
+
+.profile-detail p {
+  margin: 0 0 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+  }
+  .course-detail-grid {
+    grid-template-columns: 1.5fr 0.85fr;
+    align-items: start;
+  }
+  .player-grid,
+  .instructor-grid,
+  .dashboard-grid,
+  .profile-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .radio-grid {
+    grid-template-columns: 1.2fr 0.9fr;
+  }
+  .main-nav {
+    gap: 2rem;
+  }
+  .hide-sm {
+    display: flex;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav,
+  .auth-links {
+    display: none;
+  }
+  .main-nav.open,
+  .auth-links.open {
+    display: grid;
+    width: 100%;
+    gap: 0.75rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+  }
+  .main-nav.open a,
+  .auth-links.open a,
+  .auth-links.open button {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .main-nav.open a {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(16, 42, 67, 0.08);
+  }
+  .auth-links.open {
+    display: grid;
+    gap: 0.75rem;
+  }
+  .nav-toggle {
+    display: inline-flex;
+    border: none;
+    background: transparent;
+    font-size: 1.25rem;
+    color: var(--primary);
+  }
+}
+
+@media (max-width: 540px) {
+  .section-pad {
+    padding: 1.25rem 0;
+  }
+  .nav-row {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .eyebrow,
+  .small-link,
+  .forgot {
+    font-size: 0.75rem;
+  }
+}
