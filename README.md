@@ -1,4 +1,4 @@
-# EduWave UI/UX Scaffold
+3# EduWave UI/UX Scaffold
 
 A mobile-first static website scaffold for an education platform with video, audio, and radio learning experiences.
 
